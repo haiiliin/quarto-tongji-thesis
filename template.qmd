@@ -57,7 +57,7 @@ format:
 bibliography: bibliography.bib
 ---
 
-## Introduction {#sec-intro}
+# Introduction {#sec-intro}
 
 This is a quarto template for Geotechnique journal.
 
