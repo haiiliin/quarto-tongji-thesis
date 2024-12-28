@@ -55,7 +55,3 @@ format:
 - `denotation`: List of notations in the `denotation` environment
 - `acknowledgement`: Acknowledgement
 - `resume`: Resume
-
-## Example
-
-Here is the source code for a minimal sample document: [template.qmd](template.qmd).

@@ -1,16 +1,35 @@
----
-title: English title
+project:
+  type: book
+
+comments:
+  hypothesis: true
+
+book:
+  title: Title
+  author: Hailin Wang
+  back-to-top-navigation: true
+  page-navigation: true
+  repo-url: https://github.com/haiiliin/quarto-tongji-thesis
+  repo-actions: [edit, issue]
+  search: true
+  downloads: [pdf, docx]
+  navbar:
+    search: true
+  chapters:
+    - index.md
+
+# title: English title
 ctitle: 中文标题
 cheadingtitle: 中文页眉标题
 
 degree: doctor
 
-author: English author
+# author: English author
 cauthor: 中文作者
 studentnumber: 2000000
 
 abstract: |
-  This document is a template demonstrating the geotechnique format.
+  Abstract.
 cabstract: |
   中文摘要。
 
@@ -45,21 +64,14 @@ denotation: |
 acknowledgement: 致谢
 resume: 简历
 
+bibliography: bibliography.bib
+
 format:
+  docx: default
   html:
     toc: true
     code-fold: true
     appendix-cite-as: display
     link-external-newwindow: true
     output-file: index
-  tongji-thesis-pdf:
-    keep-tex: true
-
-bibliography: bibliography.bib
----
-
-# Introduction {#sec-intro}
-
-This is a quarto template for Geotechnique journal.
-
-This is a citation: @CameronTrivedi2013.
+  polyu-thesis-pdf: default
