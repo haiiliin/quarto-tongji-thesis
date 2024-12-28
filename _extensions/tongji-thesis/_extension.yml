@@ -1,0 +1,27 @@
+title: Tongji University Thesis Template
+author: Hailin Wang
+version: 1.0.0
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    pdf:
+      include-in-header:
+        - text: |
+            \usepackage{tongjiutils}
+      documentclass: tongjithesis
+      template-partials:
+        - partials/doc-class.tex
+        - partials/before-body.tex
+        - partials/after-body.tex
+      format-resources:
+        - tongjithesis.cfg
+        - tongjithesis.cls
+        - tongjiutils.sty
+        - hello.jpg
+        - tongji-fig-logo.png
+        - tongji-lib-logo.jpg
+        - tongji-text-logo.png
+        - tongji-whole-logo.pdf
+        - tongji-whole-logo.png
+        - tongjilogo.png
+      cite-method: biblatex

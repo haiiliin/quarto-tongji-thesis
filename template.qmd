@@ -1,0 +1,64 @@
+---
+title: English title
+ctitle: 中文标题
+cheadingtitle: 中文页眉标题
+
+degree: doctor
+
+author: English author
+cauthor: 中文作者
+studentnumber: 2000000
+
+abstract: |
+  This document is a template demonstrating the geotechnique format.
+cabstract: |
+  中文摘要。
+
+keywords:
+  - English keyword 1
+  - English keyword 1
+ckeywords:
+  - 中文关键词1
+  - 中文关键词2
+
+emajorfirst: English major first
+cmajorfirst: 一级专业
+emajorsecond: English major second
+cmajorsecond: 二级专业
+
+edepartment: English department
+cdepartment: 院系
+
+esupervisor: English supervisor
+csupervisor: 导师
+eassosupervisor: English associate supervisor
+cassosupervisor: 副导师
+
+efunds: English funds
+cfunds: 基金
+
+denotation: |
+  \begin{denotation}
+    \item[ABBR] Full description
+  \end{denotation}
+
+acknowledgement: 致谢
+resume: 简历
+
+format:
+  html:
+    toc: true
+    code-fold: true
+    appendix-cite-as: display
+    link-external-newwindow: true
+  tongji-thesis-pdf:
+    keep-tex: true
+
+bibliography: bibliography.bib
+---
+
+## Introduction {#sec-intro}
+
+This is a quarto template for Geotechnique journal.
+
+This is a citation: @CameronTrivedi2013.

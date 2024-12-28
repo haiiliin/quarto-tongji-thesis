@@ -1,0 +1,85 @@
+%%% 封面部分
+\frontmatter
+
+\tongjisetup{
+  %******************************
+  % 注意：
+  %   1. 配置里面不要出现空行
+  %   2. 不需要的配置信息可以删除
+  %******************************
+  %
+  %=====
+  % 秘级
+  %=====
+  secretlevel={保密},
+  secretyear={2},
+  %
+  %=========
+  % 中文信息
+  %=========
+  % 题目过长可以换行（推荐手动加入换行符，这样就可以控制换行的地方啦）。
+  ctitle={$ctitle$},
+  cheadingtitle={$cheadingtitle$},    %用于页眉的标题，不要换行
+  cauthor={$cauthor$},  
+  studentnumber={$studentnumber$},
+  cmajorfirst={$cmajorfirst$},
+  cmajorsecond={$cmajorsecond$},
+  cdepartment={$cdepartment$},
+  csupervisor={$csupervisor$}, 
+  % 如果没有副指导老师或者校外指导老师，把{}中内容留空即可，或者直接注释掉。
+  cassosupervisor={$cassosupervisor$}, % 副指导老师
+  % 日期自动使用当前时间，若需手动指定，按如下方式修改：
+  % cdate={\zhdigits{2018}年\zhnumber{11}月},
+  % 没有基金的话就注释掉吧。
+  cfunds={$cfunds$},
+  %
+  %=========
+  % 英文信息
+  %=========
+  etitle={$title$}, 
+  eauthor={$author$},
+  emajorfirst={$emajorfirst$},
+  emajorsecond={$emajorsecond$},
+  edepartment={$edepartment$},
+  % 日期自动使用当前时间，若需手动指定，按如下方式修改：
+  % edate={November,\ 2018},
+  esupervisor={$esupervisor$},
+  eassosupervisor={$eassosupervisor$},
+  efunds={$efunds$},    
+}
+
+% 定义中英文摘要和关键字
+\begin{cabstract}
+$cabstract$
+\end{cabstract}
+
+\ckeywords{$for(ckeywords/allbutlast)$$ckeywords$； $endfor$
+  $for(ckeywords/last)$$ckeywords$$endfor$
+}
+
+\begin{eabstract}
+$abstract$
+\end{eabstract}
+
+\ekeywords{$for(keywords/allbutlast)$$keywords$; $endfor$
+  $for(keywords/last)$$keywords$$endfor$
+}
+
+\makecover
+
+% 目录
+\tableofcontents
+
+% % 符号对照表
+$denotation$
+
+%%% 以下索引按需要选择
+% 插图索引
+\listoffigures
+% 表格索引
+\listoftables
+% 公式索引
+% \listofequations
+
+%%% 正文 
+\mainmatter
