@@ -29,7 +29,7 @@ format:
 
 ## Options
 
-- `degree`: Degree, `master` or `doctor`
+- `degree`: Degree, `master` or `doctor`, by default `doctor`
 - `title`: English title
 - `author`: English author
 - `abstract`: English abstract
