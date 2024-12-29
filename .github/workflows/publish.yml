@@ -37,6 +37,12 @@ jobs:
       - name: Setup pandoc
         uses: pandoc/actions/setup@v1
 
+      - name: Install fonts
+        shell: powershell
+        run: |
+          Copy-Item "fonts/chinese/黑体/simhei.ttf" -Destination "$Env:SystemRoot\Fonts\simhei.ttf"
+          New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" -Name "SimHei (TrueType)" -Value "simhei.ttf" -PropertyType String -Force
+
       - name: Render Quarto Project
         run: |
           quarto render --output-dir outputs
@@ -68,6 +74,12 @@ jobs:
       - name: Install tinytex
         run: |
           quarto install tinytex --update-path
+
+      - name: Install fonts
+        shell: powershell
+        run: |
+          Copy-Item "fonts/chinese/黑体/simhei.ttf" -Destination "$Env:SystemRoot\Fonts\simhei.ttf"
+          New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" -Name "SimHei (TrueType)" -Value "simhei.ttf" -PropertyType String -Force
 
       - name: Get the latest version and current short sha
         shell: bash
