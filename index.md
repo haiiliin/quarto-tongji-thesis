@@ -1,7 +1,3 @@
----
-title: Introduction
----
-
 # Introduction {#sec-intro}
 
 Introduction.
