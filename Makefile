@@ -1,4 +1,4 @@
-project = index
+project = tongji-thesis
 
 all: paper clean
 
@@ -12,7 +12,7 @@ paper:
 release-%:
 	mkdir -p releases/$*
 	quarto render --output-dir releases/$*
-	cp index.tex releases/$*/$(project).tex
+	cp $(project).tex releases/$*/$(project).tex
 	cp tongjithesis.cfg tongjithesis.cls tongjiutils.sty releases/$*/
 	cp tongji-whole-logo.pdf releases/$*/
 	cp bibliography.bib releases/$*/
