@@ -68,14 +68,14 @@ resume: 简历
 bibliography: bibliography.bib
 
 format:
-  docx:
-    output-file: tongji-thesis
   html:
     theme: cosmo
     toc: true
     code-fold: true
     appendix-cite-as: display
     link-external-newwindow: true
+    output-file: tongji-thesis
+  docx:
     output-file: tongji-thesis
   tongji-thesis-pdf:
     keep-tex: true
