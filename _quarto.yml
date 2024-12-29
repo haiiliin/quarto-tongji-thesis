@@ -11,10 +11,9 @@ book:
   page-navigation: true
   repo-url: https://github.com/haiiliin/quarto-tongji-thesis
   repo-actions: [edit, issue]
-  search: true
   downloads: [pdf, docx]
   output-file: tongji-thesis
-  navbar:
+  sidebar:
     search: true
   chapters:
     - index.md
