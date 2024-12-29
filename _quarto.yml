@@ -6,7 +6,6 @@ comments:
 
 book:
   title: Title
-  author: Hailin Wang
   back-to-top-navigation: true
   page-navigation: true
   repo-url: https://github.com/haiiliin/quarto-tongji-thesis
@@ -18,52 +17,6 @@ book:
   chapters:
     - index.md
     - chapters/chapter-1.md
-
-# title: English title
-ctitle: 中文标题
-cheadingtitle: 中文页眉标题
-
-degree: doctor
-
-# author: English author
-cauthor: 中文作者
-studentnumber: 2000000
-
-abstract: |
-  Abstract.
-cabstract: |
-  中文摘要。
-
-keywords:
-  - English keyword 1
-  - English keyword 1
-ckeywords:
-  - 中文关键词1
-  - 中文关键词2
-
-emajorfirst: English major first
-cmajorfirst: 一级专业
-emajorsecond: English major second
-cmajorsecond: 二级专业
-
-edepartment: English department
-cdepartment: 院系
-
-esupervisor: English supervisor
-csupervisor: 导师
-eassosupervisor: English associate supervisor
-cassosupervisor: 副导师
-
-efunds: English funds
-cfunds: 基金
-
-denotation: |
-  \begin{denotation}
-    \item[ABBR] Full description
-  \end{denotation}
-
-acknowledgement: 致谢
-resume: 简历
 
 bibliography: bibliography.bib
 
@@ -80,3 +33,47 @@ format:
   tongji-thesis-pdf:
     keep-tex: true
     output-file: tongji-thesis
+
+    degree: doctor
+    ctitle: 中文标题
+    cheadingtitle: 中文页眉标题
+
+    author: Hailin Wang
+    cauthor: 中文作者
+    studentnumber: 2000000
+
+    abstract: |
+      Abstract.
+    cabstract: |
+      中文摘要。
+
+    keywords:
+      - English keyword 1
+      - English keyword 1
+    ckeywords:
+      - 中文关键词1
+      - 中文关键词2
+
+    emajorfirst: English major first
+    cmajorfirst: 一级专业
+    emajorsecond: English major second
+    cmajorsecond: 二级专业
+
+    edepartment: English department
+    cdepartment: 院系
+
+    esupervisor: English supervisor
+    csupervisor: 导师
+    eassosupervisor: English associate supervisor
+    cassosupervisor: 副导师
+
+    efunds: English funds
+    cfunds: 基金
+
+    denotation: |
+      \begin{denotation}
+        \item[ABBR] Full description
+      \end{denotation}
+
+    acknowledgement: 致谢
+    resume: 简历
