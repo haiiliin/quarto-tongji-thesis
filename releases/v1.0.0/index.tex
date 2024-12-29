@@ -1,0 +1,296 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  degree=doctor,
+  letterpaper,
+]{tongjithesis}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{tongjiutils}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage[]{biblatex}
+\addbibresource{bibliography.bib}
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Title},
+  pdfauthor={Hailin Wang},
+  pdfkeywords={English keyword 1},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Title}
+\author{Hailin Wang}
+\date{}
+
+\begin{document}
+%%% 封面部分
+\frontmatter
+
+\tongjisetup{
+  %******************************
+  % 注意：
+  %   1. 配置里面不要出现空行
+  %   2. 不需要的配置信息可以删除
+  %******************************
+  %
+  %=====
+  % 秘级
+  %=====
+  secretlevel={保密},
+  secretyear={2},
+  %
+  %=========
+  % 中文信息
+  %=========
+  % 题目过长可以换行（推荐手动加入换行符，这样就可以控制换行的地方啦）。
+  ctitle={中文标题},
+  cheadingtitle={中文页眉标题},    %用于页眉的标题，不要换行
+  cauthor={中文作者},  
+  studentnumber={2000000},
+  cmajorfirst={一级专业},
+  cmajorsecond={二级专业},
+  cdepartment={院系},
+  csupervisor={导师}, 
+  % 如果没有副指导老师或者校外指导老师，把{}中内容留空即可，或者直接注释掉。
+  cassosupervisor={副导师}, % 副指导老师
+  % 日期自动使用当前时间，若需手动指定，按如下方式修改：
+  % cdate={\zhdigits{2018}年\zhnumber{11}月},
+  % 没有基金的话就注释掉吧。
+  cfunds={基金},
+  %
+  %=========
+  % 英文信息
+  %=========
+  etitle={Title}, 
+  eauthor={Hailin Wang},
+  emajorfirst={English major first},
+  emajorsecond={English major second},
+  edepartment={English department},
+  % 日期自动使用当前时间，若需手动指定，按如下方式修改：
+  % edate={November,\ 2018},
+  esupervisor={English supervisor},
+  eassosupervisor={English associate supervisor},
+  efunds={English funds},    
+}
+
+\ctexset{%
+  chapter/name={第,章},
+  appendixname=附录,
+  contentsname={目录},
+  listfigurename=插图索引,
+  listtablename=表格索引,
+  figurename=图,
+  tablename=表,
+  bibname=参考文献,
+  indexname=索引,
+}
+
+% 定义中英文摘要和关键字
+\begin{cabstract}
+中文摘要。
+\end{cabstract}
+
+\ckeywords{中文关键词1； 
+  中文关键词2
+}
+
+\begin{eabstract}
+Abstract.
+\end{eabstract}
+
+\ekeywords{
+  English keyword 1
+}
+
+\makecover
+
+% 目录
+\tableofcontents
+
+% % 符号对照表
+\begin{denotation}
+  \item[ABBR] Full description
+\end{denotation}
+
+%%% 以下索引按需要选择
+% 插图索引
+\listoffigures
+% 表格索引
+\listoftables
+% 公式索引
+% \listofequations
+
+%%% 正文 
+\mainmatter
+
+\bookmarksetup{startatroot}
+
+\chapter{Introduction}\label{sec-intro}
+
+Introduction.
+
+This is a citation: \textcite{CameronTrivedi2013}.
+
+\bookmarksetup{startatroot}
+
+\chapter{A chapter}\label{a-chapter}
+
+This is a chapter.
+
+
+\printbibliography
+
+
+%%% 其它部分
+\backmatter
+
+% 致谢
+\begin{acknowledgement}
+致谢
+\end{acknowledgement}
+
+% 个人简历
+\begin{resume}
+简历
+\end{resume}
+\end{document}
