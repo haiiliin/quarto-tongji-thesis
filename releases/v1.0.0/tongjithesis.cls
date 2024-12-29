@@ -698,10 +698,10 @@
     { 
       % \renewcommand{\baselinestretch}{1} %单倍行距
       \begin{center}
-            \erhao[1]{{\bfseries\lishu\tongji@capply}}
+            \erhao[1]{{\bfseries\CJKfamily{zhli}\tongji@capply}}
             \iftongji@academic{\par\vskip 1.8cm}
-            \else \iftongji@profession{\par\vskip 0.4cm \sihao[1]{{\bfseries\lishu（专业学位）}} \par\vskip 0.9cm}
-                    \else \iftongji@equaleducation {\par\vskip 0.4cm \sihao[1]{{\bfseries\lishu（同等学力）}} \par\vskip 0.9cm}                        
+            \else \iftongji@profession{\par\vskip 0.4cm \sihao[1]{{\bfseries\CJKfamily{zhli}（专业学位）}} \par\vskip 0.9cm}
+                    \else \iftongji@equaleducation {\par\vskip 0.4cm \sihao[1]{{\bfseries\CJKfamily{zhli}（同等学力）}} \par\vskip 0.9cm}                        
                           \fi
                     \fi
             \fi
