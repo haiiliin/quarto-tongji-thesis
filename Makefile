@@ -14,7 +14,7 @@ release-%:
 	quarto render --output-dir releases/$*
 	cp index.tex releases/$*/$(project).tex
 	cp tongjithesis.cfg tongjithesis.cls tongjiutils.sty releases/$*/
-	cp *.jpg *.png tongji-whole-logo.pdf releases/$*/
+	cp tongji-whole-logo.pdf releases/$*/
 	cp bibliography.bib releases/$*/
 	echo $* > releases/VERSION
 

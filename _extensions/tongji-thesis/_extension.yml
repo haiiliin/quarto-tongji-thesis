@@ -18,11 +18,5 @@ contributes:
         - tongjithesis.cfg
         - tongjithesis.cls
         - tongjiutils.sty
-        - hello.jpg
-        - tongji-fig-logo.png
-        - tongji-lib-logo.jpg
-        - tongji-text-logo.png
         - tongji-whole-logo.pdf
-        - tongji-whole-logo.png
-        - tongjilogo.png
       cite-method: biblatex
