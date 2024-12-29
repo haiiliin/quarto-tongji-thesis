@@ -130,7 +130,7 @@
 % , 设置 Times New Roman，Helvetic.
 % 这是txfonts的替代品，即txfonts.sty分成了俩独立的package：newtxtext 和 newtxmath
 \RequirePackage[defaultsups]{newtxtext}
-\RequirePackage{newtxmath}
+% \RequirePackage{newtxmath}
 
 % 使用 Courier 字体
 \RequirePackage{courier}
