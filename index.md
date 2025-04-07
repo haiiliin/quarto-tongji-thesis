@@ -1,5 +1,5 @@
-# Introduction {#sec-intro .unnumbered}
+# 引言 {#sec-intro .unnumbered}
 
-Introduction.
+引言.
 
-This is a citation: @CameronTrivedi2013.
+这是一个引用： @CameronTrivedi2013.
