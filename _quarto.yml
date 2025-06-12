@@ -5,7 +5,7 @@ comments:
   hypothesis: true
 
 book:
-  title: Title
+  title: 中文标题
   back-to-top-navigation: true
   page-navigation: true
   repo-url: https://github.com/haiiliin/quarto-tongji-thesis
@@ -34,24 +34,25 @@ format:
     output-file: tongji-thesis
 
     degree: doctor
-    ctitle: 中文标题
-    cheadingtitle: 中文页眉标题
+    title: 中文标题
+    etitle: English title
+    headingtitle: 中文页眉标题
 
-    author: Hailin Wang
-    cauthor: 中文作者
+    author: 中文作者
+    eauthor: English author
     studentnumber: 2000000
 
     abstract: |
-      Abstract.
-    cabstract: |
       中文摘要。
+    eabstract: |
+      Abstract.
 
     keywords:
-      - English keyword 1
-      - English keyword 1
-    ckeywords:
       - 中文关键词1
       - 中文关键词2
+    ekeywords:
+      - English keyword 1
+      - English keyword 1
 
     emajorfirst: English major first
     cmajorfirst: 一级专业

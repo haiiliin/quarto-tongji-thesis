@@ -18,9 +18,9 @@
   % 中文信息
   %=========
   % 题目过长可以换行（推荐手动加入换行符，这样就可以控制换行的地方啦）。
-  ctitle={$ctitle$},
-  cheadingtitle={$cheadingtitle$},    %用于页眉的标题，不要换行
-  cauthor={$cauthor$},  
+  ctitle={$title$},
+  cheadingtitle={$headingtitle$},    %用于页眉的标题，不要换行
+  cauthor={$author$},  
   studentnumber={$studentnumber$},
   cmajorfirst={$cmajorfirst$},
   cmajorsecond={$cmajorsecond$},
@@ -36,8 +36,8 @@
   %=========
   % 英文信息
   %=========
-  etitle={$title$}, 
-  eauthor={$author$},
+  etitle={$etitle$}, 
+  eauthor={$eauthor$},
   emajorfirst={$emajorfirst$},
   emajorsecond={$emajorsecond$},
   edepartment={$edepartment$},
@@ -62,19 +62,19 @@
 
 % 定义中英文摘要和关键字
 \begin{cabstract}
-$cabstract$
+$abstract$
 \end{cabstract}
 
-\ckeywords{$for(ckeywords/allbutlast)$$ckeywords$； $endfor$
-  $for(ckeywords/last)$$ckeywords$$endfor$
+\ckeywords{$for(keywords/allbutlast)$$keywords$； $endfor$
+  $for(keywords/last)$$keywords$$endfor$
 }
 
 \begin{eabstract}
-$abstract$
+$eabstract$
 \end{eabstract}
 
-\ekeywords{$for(keywords/allbutlast)$$keywords$; $endfor$
-  $for(keywords/last)$$keywords$$endfor$
+\ekeywords{$for(ekeywords/allbutlast)$$ekeywords$; $endfor$
+  $for(ekeywords/last)$$ekeywords$$endfor$
 }
 
 \makecover

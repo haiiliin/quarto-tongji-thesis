@@ -30,15 +30,11 @@ format:
 ## Options
 
 - `degree`: Degree, `master` or `doctor`, by default `doctor`
-- `title`: English title
-- `author`: English author
-- `abstract`: English abstract
-- `keywords`: English keywords
-- `ctitle`: 中文标题
-- `cheadingtitle`: 中文页眉标题
-- `cabstract`: 中文摘要
-- `ckeywords`: 中文关键词
-- `cauthor`: 中文作者
+- `title`: 中文标题
+- `headingtitle`: 中文页眉标题
+- `abstract`: 中文摘要
+- `keywords`: 中文关键词
+- `author`: 中文作者
 - `studentnumber`: 学号
 - `cmajorfirst`: 一级专业
 - `cmajorsecond`: 二级专业
@@ -46,6 +42,10 @@ format:
 - `csupervisor`: 导师
 - `cassosupervisor`: 副导师
 - `cfunds`: 基金
+- `etitle`: English title
+- `eauthor`: English author
+- `eabstract`: English abstract
+- `ekeywords`: English keywords
 - `emajorfirst`: English major first
 - `emajorsecond`: English major second
 - `edepartment`: English department
