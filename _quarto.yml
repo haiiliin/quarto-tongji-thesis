@@ -18,7 +18,18 @@ book:
     - index.md
     - chapters/chapter-1.md
 
+# Bibliography
 bibliography: bibliography.bib
+
+# Language settings
+lang: zh
+reference-section-title: 参考文献
+crossref:
+  fig-title: 图
+  tbl-title: 表
+  fig-prefix: 图
+  tbl-prefix: 表
+  eq-prefix: 式
 
 format:
   html:
