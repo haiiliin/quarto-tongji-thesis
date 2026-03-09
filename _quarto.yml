@@ -15,8 +15,8 @@ book:
   sidebar:
     search: true
   chapters:
-    - index.md
-    - chapters/chapter-1.md
+    - index.qmd
+    - chapters/chapter-1.qmd
 
 # Bibliography
 bibliography: bibliography.bib
