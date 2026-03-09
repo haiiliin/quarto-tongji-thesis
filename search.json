@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "中文标题",
+    "section": "",
+    "text": "引言\n引言.\n这是一个引用： Cameron 和 Trivedi (2013).\n\n\n\n\n参考文献\n\n\nCameron, A. Colin, 和 Pravin K. Trivedi. 2013. Regression Analysis of Count Data. 2nd 本. Cambridge: Cambridge University Press.",
+    "crumbs": [
+      "引言"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-1.html",
+    "href": "chapters/chapter-1.html",
+    "title": "1  第一章",
+    "section": "",
+    "text": "这是第一章的内容。",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>第一章</span>"
+    ]
+  }
+]
